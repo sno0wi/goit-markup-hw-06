@@ -60,9 +60,9 @@ img {
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 p {
@@ -251,29 +251,36 @@ p {
 
 .value-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px;
 
 }
 
 .value-item {
-    flex-basis: calc((100% - 3*24px)/4);
+    flex-basis: 100%;
 }
 
 .value-title {
-    font-size: 20px;
-    font-weight: 500;
+    /* font-size: 20px; */
+    font-size: 36px;
+    /* font-weight: 500; */
+    font-weight: 700;
     line-height: 1.2;
     color: var(--navyblue);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .value-text {
+    font-weight: 500;
     line-height: 1.5;
     margin: 0;
 }
 
 .rectange-list {
-    display: flex;
+    /* display: flex; */
+    display: none;
     gap: 24px;
     margin-bottom: 8px;
 }
