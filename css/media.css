@@ -12,6 +12,8 @@
     --dairy: #FCFCFC;
 }
 
+/* MOB */
+
 @media screen and (min-width: 320px) {
     .container {
         min-width: 320px;
@@ -19,14 +21,9 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-    .main-wrapper {
-        background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
-            url(../images/dark-bg_mob.jpg);
-    }
 }
 
-@media only screen and (min-width: 320px) and (min-resolution: 192dpi) {
+@media only screen and (min-resolution: 192dpi) {
     .main-wrapper {
         background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
             url(../images/dark-bg_mob@2x.jpg);
@@ -46,6 +43,10 @@
         justify-content: space-between;
     }
 }
+
+/* MOB */
+
+/* TAB */
 
 @media only screen and (min-width: 320px) and (max-width: 1157.98px) {
     .rectange-list {
@@ -120,6 +121,11 @@
         flex-basis: calc((100% - 24px) / 2);
     }
 
+    .portfolio-pic {
+        width: 356px;
+        height: 300px;
+    }
+
     .tablet-inner {
         padding: 0 76px;
         display: flex;
@@ -165,6 +171,18 @@
         min-height: 584px;
     }
 }
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .main-wrapper {
+        background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+            url(../images/dark-bg_tab@2x.jpg);
+    }
+
+}
+
+/* TAB */
+
+/* LAPTOP */
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -246,6 +264,11 @@
         flex-basis: calc((100% - 48px) / 3);
     }
 
+    .portfolio-pic {
+        width: 360px;
+        height: 300px;
+    }
+
     .footer_first-block {
         margin-right: 120px;
         margin-bottom: 0px;
@@ -254,4 +277,14 @@
     .footer_second-block {
         margin-right: 80px;
     }
+
+    @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+        .main-wrapper {
+            background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+                url(../images/dark-bg_laptop@2x.jpg);
+        }
+
+    }
 }
+
+/* LAPTOP */

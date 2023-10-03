@@ -200,7 +200,7 @@ p {
 .main-wrapper {
     text-align: center;
     background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
-        url(../images/hero_bgi.jpg);
+        url(../images/dark-bg_mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 72px 0 72px;
