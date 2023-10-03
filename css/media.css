@@ -14,11 +14,31 @@
 
 @media screen and (min-width: 320px) {
     .container {
-        max-width: 320px;
+        min-width: 320px;
+        max-width: 375px;
         margin-left: auto;
         margin-right: auto;
     }
+}
 
+@media only screen and (max-width:767.98px) {
+    .contacts {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-wrapper {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1157.98px) {
+    .rectange-list {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -30,21 +50,27 @@
         padding: 112px 0 112px;
     }
 
-    .nav-wrapper {}
+    .header-inner {
+        gap: 0;
+    }
 
     .nav-logo {
         padding: 25.5px 0;
     }
 
-    .contacts {
-        display: flex;
-        flex-direction: column;
+    .nav-item.active a::after {
+        bottom: -4px;
     }
 
-    .contacts-list {}
+    .contacts-list {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
 
-    .nav-list {
-        display: flex;
+    .contacts-link {
+        padding: 0;
+        font-size: 12px;
     }
 
     .open-modal-btn {
@@ -70,7 +96,6 @@
         text-align: start;
     }
 
-    .value-text {}
 
     .portfolio-list {
         flex-direction: unset;
@@ -85,14 +110,11 @@
         padding: 0 76px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
-
     }
 
     .footer_first-block {
         text-align: start;
-        margin-bottom: 0;
         margin-right: 24px;
     }
 
@@ -122,6 +144,11 @@
     .team-item {
         flex-basis: calc((100% - 24px) / 2);
     }
+
+    .modal {
+        width: 408px;
+        min-height: 584px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -138,6 +165,22 @@
         line-height: 1.07;
         padding-bottom: 48px;
         letter-spacing: 0, 07em;
+    }
+
+
+    .nav-logo {
+        padding: 25.5px 0;
+    }
+
+    .contacts-list {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contacts-link {
+        font-size: 16px;
     }
 
     .value-list {
@@ -165,7 +208,7 @@
     .tablet-inner {
         padding: 0;
         gap: 0;
-
+        justify-content: center;
     }
 
     .team-list {
@@ -188,6 +231,7 @@
 
     .footer_first-block {
         margin-right: 120px;
+        margin-bottom: 0px;
     }
 
     .footer_second-block {
