@@ -220,7 +220,7 @@ p {
     font-size: 36px;
     color: var(--white);
     line-height: 1.11;
-    letter-spacing: 0, 45em;
+    letter-spacing: 0.02em;
     text-align: center;
     padding-bottom: 72px;
 }
